@@ -1,0 +1,69 @@
+lockfileVersion: "6.0"
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+  .: {}
+
+  packages/A:
+    dependencies:
+      postcss:
+        specifier: ^8.4.10
+        version: 8.4.10
+
+  packages/B:
+    dependencies:
+      postcss:
+        specifier: 8.4.28
+        version: 8.4.28
+
+packages:
+  /nanoid@3.3.7:
+    resolution:
+      {
+        integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==,
+      }
+    engines: { node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1 }
+    hasBin: true
+    dev: false
+
+  /picocolors@1.0.1:
+    resolution:
+      {
+        integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==,
+      }
+    dev: false
+
+  /postcss@8.4.10:
+    resolution:
+      {
+        integrity: sha512-84ERZDkObgU3JLeBzqB0DK3+kFHhhxAngTIeOL4cAykcVYaY4ie3iAzaroXpYeHJNZcPIVvbGAyRxDsqJUUSJg==,
+      }
+    engines: { node: ^10 || ^12 || >=14 }
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.1
+      source-map-js: 1.2.0
+    dev: false
+
+  /postcss@8.4.28:
+    resolution:
+      {
+        integrity: sha512-Z7V5j0cq8oEKyejIKfpD8b4eBy9cwW2JWPk0+fB1HOAMsfHbnAXLLS+PfVWlzMSLQaWttKDt607I0XHmpE67Vw==,
+      }
+    engines: { node: ^10 || ^12 || >=14 }
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.1
+      source-map-js: 1.2.0
+    dev: false
+
+  /source-map-js@1.2.0:
+    resolution:
+      {
+        integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==,
+      }
+    engines: { node: ">=0.10.0" }
+    dev: false
